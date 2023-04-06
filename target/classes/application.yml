@@ -10,3 +10,5 @@ spring:
 mybatis-plus:        #取消控制台无用图标显示
  global-config:
   banner: false
+  db-config:
+   id-type: auto
