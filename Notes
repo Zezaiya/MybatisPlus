@@ -1,11 +1,18 @@
                                       MybaitsPlus
-->����Mybatis��ܻ����Ͽ�������ǿ�͹���,���俪��,���Ч��
+->基于Mybatis框架基础上开发的增强型工具,简化其开发,提高效率
 
-ʵ�ַ���:��dao��̳�BaseMapper<����>�ӿ�,���;������ݿ������,Ҳ����ʵ���������,����Ҫһ��,�򵥵���ɾ��Ĳ���Ҫ��д������,ֱ��ʹ��Mybatis
-        PlusΪ�����ṩ��dao.xxx��������
+实现方法:在dao层继承BaseMapper<泛型>接口,泛型就是数据库的名称,也是你实体类的名称,两者要一致,简单的增删查改不需要再写方法了,直接使用Mybatis
+        Plus为我们提供的dao.xxx方法即可
 
-����:
-     1.������ʽ:ֻ����ǿ�����ı�(AOP˼��),��������й�����Ӱ��
-     2.ǿ���CRUD����:����ͨ��Mapper,�������ü���ʵ�ֵ���CRUD����
-     3.֧��Lanmbda:��д��ѯ�������赣���ֶ�д��
+特性:
+     1.无侵入式:只做增强不做改变(AOP思想),不会对现有工程有影响
+     2.强大的CRUD操作:内置通用Mapper,少量配置即可实现单表CRUD操作
+     3.支持Lanmbda:编写查询条件无需担心字段写错
      ...
+
+------------------------------------------------------------------------------------------------------
+                                        Lombok
+->Java类库,使我们可以通过注解简化Pojo实体类的书写(导入Lombok坐标即可)
+@Data=@Getter +@Setter +@toString +@EqualsAndHashCode
+空参构造:@NoArgsConstructor
+全参构造:@AllArgsConstructor

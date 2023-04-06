@@ -4,4 +4,9 @@ spring:
   url: jdbc:mysql://localhost:3306/db1?useUnicode=true&useSSL=false&characterEncoding=UTF-8  
   username: root
   password: 123456
-  type: com.alibaba.druid.pool.DruidDataSource    
+  type: com.alibaba.druid.pool.DruidDataSource
+ main:
+  banner-mode: off
+mybatis-plus:        #取消控制台无用图标显示
+ global-config:
+  banner: false
